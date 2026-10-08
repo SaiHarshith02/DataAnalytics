@@ -1,0 +1,121 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.25.1",
+    "script_metadata_hash": null
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "d873bc246fd99a663f74fe0e504beed5",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "UhNq",
+      "code_hash": "8ceea61ac689c35a3b83000a298261a7",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='UhNq-0' random-id='3373f773-cb94-7194-146e-dba1f2c574a2'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;survived&#92;&quot;:0,&#92;&quot;pclass&#92;&quot;:3,&#92;&quot;sex&#92;&quot;:&#92;&quot;male&#92;&quot;,&#92;&quot;age&#92;&quot;:22.0,&#92;&quot;sibsp&#92;&quot;:1,&#92;&quot;parch&#92;&quot;:0,&#92;&quot;embarked&#92;&quot;:&#92;&quot;S&#92;&quot;},{&#92;&quot;survived&#92;&quot;:1,&#92;&quot;pclass&#92;&quot;:1,&#92;&quot;sex&#92;&quot;:&#92;&quot;female&#92;&quot;,&#92;&quot;age&#92;&quot;:38.0,&#92;&quot;sibsp&#92;&quot;:1,&#92;&quot;parch&#92;&quot;:0,&#92;&quot;embarked&#92;&quot;:&#92;&quot;C&#92;&quot;},{&#92;&quot;survived&#92;&quot;:1,&#92;&quot;pclass&#92;&quot;:3,&#92;&quot;sex&#92;&quot;:&#92;&quot;female&#92;&quot;,&#92;&quot;age&#92;&quot;:26.0,&#92;&quot;sibsp&#92;&quot;:0,&#92;&quot;parch&#92;&quot;:0,&#92;&quot;embarked&#92;&quot;:&#92;&quot;S&#92;&quot;},{&#92;&quot;survived&#92;&quot;:1,&#92;&quot;pclass&#92;&quot;:1,&#92;&quot;sex&#92;&quot;:&#92;&quot;female&#92;&quot;,&#92;&quot;age&#92;&quot;:35.0,&#92;&quot;sibsp&#92;&quot;:1,&#92;&quot;parch&#92;&quot;:0,&#92;&quot;embarked&#92;&quot;:&#92;&quot;S&#92;&quot;},{&#92;&quot;survived&#92;&quot;:0,&#92;&quot;pclass&#92;&quot;:3,&#92;&quot;sex&#92;&quot;:&#92;&quot;male&#92;&quot;,&#92;&quot;age&#92;&quot;:35.0,&#92;&quot;sibsp&#92;&quot;:0,&#92;&quot;parch&#92;&quot;:0,&#92;&quot;embarked&#92;&quot;:&#92;&quot;S&#92;&quot;}]&quot;' data-total-rows='5' data-total-columns='7' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;survived&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;pclass&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;sex&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;age&quot;,[&quot;number&quot;,&quot;float64&quot;]],[&quot;sibsp&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;parch&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;embarked&quot;,[&quot;string&quot;,&quot;str&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MngL",
+      "code_hash": "040b517d53b9866b53aeb93086e46e08",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Brzc",
+      "code_hash": "694460c4ed03f2d4fd3bdf954f5d28c8",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Handilling nulls............\n0      22.000000\n1      38.000000\n2      26.000000\n3      35.000000\n4      35.000000\n         ...    \n886    27.000000\n887    19.000000\n888    29.699118\n889    26.000000\n890    32.000000\nName: age, Length: 891, dtype: float64\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "Qvdn",
+      "code_hash": "c363f6031332e32ef8c4d5301f704399",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "     pclass     sex        age  sibsp  parch     fare embarked   class    who  \\\n0         3    male  22.000000      1      0   7.2500        S   Third    man   \n1         1  female  38.000000      1      0  71.2833        C   First  woman   \n2         3  female  26.000000      0      0   7.9250        S   Third  woman   \n3         1  female  35.000000      1      0  53.1000        S   First  woman   \n4         3    male  35.000000      0      0   8.0500        S   Third    man   \n..      ...     ...        ...    ...    ...      ...      ...     ...    ...   \n886       2    male  27.000000      0      0  13.0000        S  Second    man   \n887       1  female  19.000000      0      0  30.0000        S   First  woman   \n888       3  female  29.699118      1      2  23.4500        S   Third  woman   \n889       1    male  26.000000      0      0  30.0000        C   First    man   \n890       3    male  32.000000      0      0   7.7500        Q   Third    man   \n\n     adult_male deck  embark_town alive  alone  \n0          True  NaN  Southampton    no  False  \n1         False    C    Cherbourg   yes  False  \n2         False  NaN  Southampton   yes   True  \n3         False    C  Southampton   yes  False  \n4          True  NaN  Southampton    no   True  \n..          ...  ...          ...   ...    ...  \n886        True  NaN  Southampton    no   True  \n887       False    B  Southampton   yes   True  \n888       False  NaN  Southampton    no  False  \n889        True    C    Cherbourg   yes   True  \n890        True  NaN   Queenstown    no   True  \n\n[891 rows x 14 columns]\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "dqvt",
+      "code_hash": "9a867992b8cd847165e8e632d5863029",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "     pclass     sex       age  sibsp  parch     fare embarked   class    who  \\\n0         3    male -0.592481      1      0   7.2500        S   Third    man   \n1         1  female  0.638789      1      0  71.2833        C   First  woman   \n2         3  female -0.284663      0      0   7.9250        S   Third  woman   \n3         1  female  0.407926      1      0  53.1000        S   First  woman   \n4         3    male  0.407926      0      0   8.0500        S   Third    man   \n..      ...     ...       ...    ...    ...      ...      ...     ...    ...   \n886       2    male -0.207709      0      0  13.0000        S  Second    man   \n887       1  female -0.823344      0      0  30.0000        S   First  woman   \n888       3  female  0.000000      1      2  23.4500        S   Third  woman   \n889       1    male -0.284663      0      0  30.0000        C   First    man   \n890       3    male  0.177063      0      0   7.7500        Q   Third    man   \n\n     adult_male deck  embark_town alive  alone  \n0          True  NaN  Southampton    no  False  \n1         False    C    Cherbourg   yes  False  \n2         False  NaN  Southampton   yes   True  \n3         False    C  Southampton   yes  False  \n4          True  NaN  Southampton    no   True  \n..          ...  ...          ...   ...    ...  \n886        True  NaN  Southampton    no   True  \n887       False    B  Southampton   yes   True  \n888       False  NaN  Southampton    no  False  \n889        True    C    Cherbourg   yes   True  \n890        True  NaN   Queenstown    no   True  \n\n[891 rows x 14 columns]\n   pclass_1  pclass_2  pclass_3  sex_female  sex_male  sibsp_0  sibsp_1  \\\n0       0.0       0.0       1.0         0.0       1.0      0.0      1.0   \n1       1.0       0.0       0.0         1.0       0.0      0.0      1.0   \n2       0.0       0.0       1.0         1.0       0.0      1.0      0.0   \n3       1.0       0.0       0.0         1.0       0.0      0.0      1.0   \n4       0.0       0.0       1.0         0.0       1.0      1.0      0.0   \n\n   sibsp_2  sibsp_3  sibsp_4  ...  parch_2  parch_3  parch_4  parch_5  \\\n0      0.0      0.0      0.0  ...      0.0      0.0      0.0      0.0   \n1      0.0      0.0      0.0  ...      0.0      0.0      0.0      0.0   \n2      0.0      0.0      0.0  ...      0.0      0.0      0.0      0.0   \n3      0.0      0.0      0.0  ...      0.0      0.0      0.0      0.0   \n4      0.0      0.0      0.0  ...      0.0      0.0      0.0      0.0   \n\n   parch_6  embarked_C  embarked_Q  embarked_S  embarked_nan       age  \n0      0.0         0.0         0.0         1.0           0.0 -0.592481  \n1      0.0         1.0         0.0         0.0           0.0  0.638789  \n2      0.0         0.0         0.0         1.0           0.0 -0.284663  \n3      0.0         0.0         0.0         1.0           0.0  0.407926  \n4      0.0         0.0         0.0         1.0           0.0  0.407926  \n\n[5 rows x 24 columns]\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "bgRX",
+      "code_hash": null,
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}
