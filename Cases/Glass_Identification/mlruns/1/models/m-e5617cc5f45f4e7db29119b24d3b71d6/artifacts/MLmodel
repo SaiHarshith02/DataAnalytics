@@ -1,0 +1,33 @@
+artifact_path: file:D:/Training/Academy/ML(Python)/Cases/Glass_Identification/mlruns/1/models/m-e5617cc5f45f4e7db29119b24d3b71d6/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.12
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+is_signature_from_type_hint: false
+mlflow_version: 3.8.1
+model_id: m-e5617cc5f45f4e7db29119b24d3b71d6
+model_size_bytes: 28448
+model_uuid: m-e5617cc5f45f4e7db29119b24d3b71d6
+prompts: null
+run_id: 56020fdebbc44ec4b74f2cddd1a53105
+signature:
+  inputs: '[{"type": "double", "name": "RI", "required": true}, {"type": "double",
+    "name": "Na", "required": true}, {"type": "double", "name": "Mg", "required":
+    true}, {"type": "double", "name": "Al", "required": true}, {"type": "double",
+    "name": "Si", "required": true}, {"type": "double", "name": "K", "required": true},
+    {"type": "double", "name": "Ca", "required": true}, {"type": "double", "name":
+    "Ba", "required": true}, {"type": "double", "name": "Fe", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-01-16 10:58:43.340039'
